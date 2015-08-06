@@ -11,9 +11,8 @@ var a = [
 ]
 
 $.each(a, function(i,v){ a[i] = 'a[href="'+v+'"]';  })
-var filter = ':not('+a.join(', ')+')';
 $('.avatar > a')
-  .filter(filter)
+  .filter(':not('+a.join(', ')+')')
   .parents('article').remove()
 
 $('.date_group')
