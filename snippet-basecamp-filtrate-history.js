@@ -1,4 +1,4 @@
-
+$('.event_container').remove() // remove hidden event containers
 // filtrate history in basecamp
 var a = [
   '/2356878/people/6029686',
